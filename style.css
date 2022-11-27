@@ -5,6 +5,8 @@
   --main_white: hsl(0, 0%, 100%);
   --pwhite: hsla(0, 0%, 100%, 0.75);
   --headingwhite: hsla(0, 0%, 100%, 0.6);
+  --inter: "Inter", sans-serif;
+  --Lexend: "Lexend Deca", sans-serif;
 }
 
 /* Box sizing rules */
@@ -56,6 +58,8 @@ img,
 picture {
   max-width: 100%;
   display: block;
+  border-radius: 5px;
+  height: 12rem;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -87,23 +91,36 @@ body {
 }
 
 .main-content {
-  margin: 1.5rem;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 16rem;
+  margin: 5rem;
   background-color: var(--card_background);
+  border-radius: 5px;
+}
+
+h1 {
+  color: var(--main_white);
+  font-size: 25px;
+  padding: 1rem;
+}
+
+p {
+  color: var(--pwhite);
+  font-size: 12px;
+  padding: 1rem;
+  font-family: var(--inter);
+  font-weight: 400;
 }
 
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  padding: 1rem;
+  gap: 10px;
   color: var(--headingwhite);
-}
-
-h1 {
-  color: var(--main_white);
-}
-
-p {
-  color: var(--pwhite);
 }
