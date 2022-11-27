@@ -58,8 +58,17 @@ img,
 picture {
   max-width: 100%;
   display: block;
-  border-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
   height: 12rem;
+}
+
+picture {
+  background-color: var(--accent);
+}
+
+img {
+  filter: opacity(0.45);
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -106,14 +115,23 @@ h1 {
   color: var(--main_white);
   font-size: 25px;
   padding: 1rem;
+  font-family: var(--Lexend);
+  font-weight: 700;
+  text-align: center;
+}
+
+.title-purple {
+  color: var(--accent);
 }
 
 p {
   color: var(--pwhite);
   font-size: 12px;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-family: var(--inter);
   font-weight: 400;
+  text-align: center;
 }
 
 section {
@@ -123,4 +141,15 @@ section {
   padding: 1rem;
   gap: 10px;
   color: var(--headingwhite);
+  text-align: center;
+}
+
+.section-bold {
+  font-family: var(--Lexend);
+  font-weight: 700;
+  color: var(--main_white);
+}
+
+.subheader {
+  font-size: 10px;
 }
