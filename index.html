@@ -21,37 +21,41 @@
   <body>
     <div class="main-content">
       <picture
-        ><img
-          src="/images/image-header-mobile.jpg"
+        ><source
+          srcset="/images/image-header-desktop.jpg"
+          media="(min-width: 600px)" />
+        <img
+          srcset="/images/image-header-mobile.jpg"
           alt="people sitting in office"
-          srcset=""
       /></picture>
-      <header>
-        <h1>
-          Get <span class="title-purple">insights</span> that help your business
-          grow.
-        </h1>
-      </header>
-      <main>
-        <p>
-          Discover the benefits of data analytics and make better decisions
-          regarding revenue, customer experience, and overall efficiency.
-        </p>
-      </main>
-      <section>
-        <div class="companies">
-          <span class="section-bold">10k+</span>
-          <div><p class="subheader">COMPANIES</p></div>
-        </div>
-        <div class="templates">
-          <span class="section-bold">314</span>
-          <div><p class="subheader">TEMPLATES</p></div>
-        </div>
-        <div class="queries">
-          <span class="section-bold">12M+</span>
-          <div><p class="subheader">QUERIES</p></div>
-        </div>
-      </section>
+      <div class="hero">
+        <header>
+          <h1>
+            Get <span class="title-purple">insights</span> that help your
+            business grow.
+          </h1>
+        </header>
+        <main>
+          <p>
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+        </main>
+        <section>
+          <div class="companies">
+            <span class="section-bold">10k+</span>
+            <div><p class="subheader">COMPANIES</p></div>
+          </div>
+          <div class="templates">
+            <span class="section-bold">314</span>
+            <div><p class="subheader">TEMPLATES</p></div>
+          </div>
+          <div class="queries">
+            <span class="section-bold">12M+</span>
+            <div><p class="subheader">QUERIES</p></div>
+          </div>
+        </section>
+      </div>
     </div>
   </body>
 </html>
